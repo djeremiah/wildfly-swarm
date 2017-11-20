@@ -200,7 +200,7 @@ To build an initial WildFly Swarm app:
     <dependencies>
       <dependency>
         <groupId>org.wildfly.swarm</groupId>
-        <artifactId>bom-all</artifactId>
+        <artifactId>bom</artifactId>
         <version>${version.wildfly.swarm}</version>
         <type>pom</type>
         <scope>import</scope>
@@ -233,7 +233,7 @@ and add below it:
 
 +
 [source, xml]
-    <version.wildfly.swarm>2017.8.1</version.wildfly.swarm>
+    <version.wildfly.swarm>7.0.0.redhat-6</version.wildfly.swarm>
 
 +
 . Finally, you'll need to define the data source used by the app (this is normally done through your app server, but in this
@@ -270,7 +270,8 @@ $ mvn clean package
 You'll see several lines of output, and see that WildFly Swarm will auto-detect the necessary components needed to run the app later:
 
 [source]
-[INFO] Detected fractions: cdi:2017.8.1, ejb:2017.8.1, jaxrs:2017.8.1, jpa:2017.8.1
+[INFO] Detected fractions: cdi:7.0.0.redhat-6, ejb:7.0.0.redhat-6, jaxrs:7.0.0.redhat-6, jpa:7.0.0.redhat-6
+
 
 After a `BUILD SUCCESS`, in addition to the `.war` file, WildFly Swarm creates an `Uberjar`:
 
