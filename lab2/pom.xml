@@ -31,7 +31,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
 
-    <version.wildfly.swarm>2017.8.1</version.wildfly.swarm>
+    <version.wildfly.swarm>7.0.0.redhat-6</version.wildfly.swarm>
 
     <version.h2>1.4.187</version.h2>
     <failOnMissingWebXml>false</failOnMissingWebXml>
@@ -48,7 +48,7 @@
     <dependencies>
       <dependency>
         <groupId>org.wildfly.swarm</groupId>
-        <artifactId>bom-all</artifactId>
+        <artifactId>bom</artifactId>
         <version>${version.wildfly.swarm}</version>
         <type>pom</type>
         <scope>import</scope>
