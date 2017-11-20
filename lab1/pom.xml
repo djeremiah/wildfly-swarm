@@ -35,7 +35,7 @@
 
     <!-- Add additional properties here -->
 
-    <version.wildfly.swarm>2017.8.1</version.wildfly.swarm>
+    <version.wildfly.swarm>7.0.0.redhat-6</version.wildfly.swarm>
 
   </properties>
 
@@ -45,7 +45,7 @@
     <dependencies>
       <dependency>
         <groupId>org.wildfly.swarm</groupId>
-        <artifactId>bom-all</artifactId>
+        <artifactId>bom</artifactId>
         <version>${version.wildfly.swarm}</version>
         <type>pom</type>
         <scope>import</scope>
